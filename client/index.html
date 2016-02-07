@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Orders | Store</title>
+	<!-- Angular External Script-->
+	<script src="./assets/js/angular.js"></script>
+	<!-- Angular - Our Script -->
+	<script src="./assets/js/main.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="./assets/js/jquery-1.11.2.js"></script>
+	<script src="./assets/js/bootstrap.js"></script>
+
+	<script src="./module/module.js"></script>
+</head>
+<body ng-app="sampleApp">
+	<p>Hello World!</p>
+	<div ng-controller="mainController as main">
+		<p ng-repeat="user in main.users"> <span ng-bind="user.name"></span></p>
+
+	</div>
+</body>
+</html>
